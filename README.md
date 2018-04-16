@@ -1,5 +1,7 @@
 # ios-teaching
-Teaching project sample.
+link tutorial
+https://www.tutorialspoint.com/swift/index.htm
+https://github.com/duliodenis/cs193p-Winter-2017
 
 # auto layout tutorial
 link:
