@@ -12,7 +12,7 @@ class SellingTableVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
-    var arrayData = ["Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo", "Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo"]
+    var arrayData = ["Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo", "Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo", "Chó"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
