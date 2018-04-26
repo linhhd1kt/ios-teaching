@@ -20,6 +20,9 @@ class SellingTableVC: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
     }
     
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayData.count
     }

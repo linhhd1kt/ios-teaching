@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66812087616E00B2E449 /* AppDelegate.swift */; };
-		F10D66842087616E00B2E449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66832087616E00B2E449 /* ViewController.swift */; };
+		F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66832087616E00B2E449 /* ProvinceVC.swift */; };
 		F10D66872087616E00B2E449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D66852087616E00B2E449 /* Main.storyboard */; };
 		F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10D66882087616E00B2E449 /* ios_teaching.xcdatamodeld */; };
 		F10D668C2087616E00B2E449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D668B2087616E00B2E449 /* Assets.xcassets */; };
@@ -19,6 +19,7 @@
 		F10D66AA20876B6200B2E449 /* CornerRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */; };
 		F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66AC208770A600B2E449 /* SellingTableVC.swift */; };
 		F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66AE2087767F00B2E449 /* SellingCell.swift */; };
+		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 /* Begin PBXFileReference section */
 		F10D667E2087616E00B2E449 /* ios-teaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-teaching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10D66812087616E00B2E449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F10D66832087616E00B2E449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F10D66832087616E00B2E449 /* ProvinceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceVC.swift; sourceTree = "<group>"; };
 		F10D66862087616E00B2E449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10D66892087616E00B2E449 /* ios_teaching.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_teaching.xcdatamodel; sourceTree = "<group>"; };
 		F10D668B2087616E00B2E449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusButton.swift; sourceTree = "<group>"; };
 		F10D66AC208770A600B2E449 /* SellingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingTableVC.swift; sourceTree = "<group>"; };
 		F10D66AE2087767F00B2E449 /* SellingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingCell.swift; sourceTree = "<group>"; };
+		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +91,10 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F19B1813208A1144008AFE42 /* Common */,
 				F10D66AB2087706200B2E449 /* TableView */,
 				F10D66A4208761F000B2E449 /* Autolayout */,
 				F10D66812087616E00B2E449 /* AppDelegate.swift */,
-				F10D66832087616E00B2E449 /* ViewController.swift */,
 				F10D66852087616E00B2E449 /* Main.storyboard */,
 				F10D668B2087616E00B2E449 /* Assets.xcassets */,
 				F10D668D2087616E00B2E449 /* LaunchScreen.storyboard */,
@@ -128,6 +130,15 @@
 				F10D66AE2087767F00B2E449 /* SellingCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		F19B1813208A1144008AFE42 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F10D66832087616E00B2E449 /* ProvinceVC.swift */,
+				F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */,
 				F10D66AA20876B6200B2E449 /* CornerRadiusButton.swift in Sources */,
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
 				F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */,
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
-				F10D66842087616E00B2E449 /* ViewController.swift in Sources */,
+				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
 				F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */,
 			);
