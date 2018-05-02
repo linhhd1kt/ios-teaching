@@ -19,6 +19,10 @@
 		F10D66AA20876B6200B2E449 /* CornerRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */; };
 		F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66AC208770A600B2E449 /* SellingTableVC.swift */; };
 		F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66AE2087767F00B2E449 /* SellingCell.swift */; };
+		F11934752099E95300EE9CEC /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11934742099E95300EE9CEC /* SettingCell.swift */; };
+		F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD912099E07C00351130 /* RoundAvatar.swift */; };
+		F11BFD952099E23400351130 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD942099E23400351130 /* ProfileVC.swift */; };
+		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,10 @@
 		F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusButton.swift; sourceTree = "<group>"; };
 		F10D66AC208770A600B2E449 /* SellingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingTableVC.swift; sourceTree = "<group>"; };
 		F10D66AE2087767F00B2E449 /* SellingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingCell.swift; sourceTree = "<group>"; };
+		F11934742099E95300EE9CEC /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		F11BFD912099E07C00351130 /* RoundAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundAvatar.swift; sourceTree = "<group>"; };
+		F11BFD942099E23400351130 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +99,7 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F11BFD932099E20B00351130 /* MultiSectionTableView */,
 				F19B1813208A1144008AFE42 /* Common */,
 				F10D66AB2087706200B2E449 /* TableView */,
 				F10D66A4208761F000B2E449 /* Autolayout */,
@@ -119,6 +128,7 @@
 				F10D66A52087623F00B2E449 /* LoginVC.swift */,
 				F10D66A7208767F100B2E449 /* CornerRadiusView.swift */,
 				F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */,
+				F11BFD912099E07C00351130 /* RoundAvatar.swift */,
 			);
 			path = Autolayout;
 			sourceTree = "<group>";
@@ -130,6 +140,16 @@
 				F10D66AE2087767F00B2E449 /* SellingCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		F11BFD932099E20B00351130 /* MultiSectionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F11BFD942099E23400351130 /* ProfileVC.swift */,
+				F11BFD962099E2DA00351130 /* ProfileCell.swift */,
+				F11934742099E95300EE9CEC /* SettingCell.swift */,
+			);
+			path = MultiSectionTableView;
 			sourceTree = "<group>";
 		};
 		F19B1813208A1144008AFE42 /* Common */ = {
@@ -251,8 +271,12 @@
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
+				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
 				F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */,
+				F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */,
+				F11BFD952099E23400351130 /* ProfileVC.swift in Sources */,
+				F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
