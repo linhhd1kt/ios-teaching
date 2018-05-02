@@ -12,10 +12,6 @@ class ProvinceVC: UIViewController, UITableViewDataSource  {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //    func doSomeThing() {
-    //        print("do some thing")
-    //    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +19,7 @@ class ProvinceVC: UIViewController, UITableViewDataSource  {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1000000
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,31 +37,11 @@ class ProvinceVC: UIViewController, UITableViewDataSource  {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProvinceCell") as! ProvinceCell
 
-//            let item = arrayData[indexPath.item]
-
             cell.setup(name: "Đà Nẵng")
 
             return cell
         }
-        
     }
-    
-    
+
 }
-
-// how can i get reference to a viewcontroller
-
-//let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-//let provinceVC = storyBoard.instantiateViewController(withIdentifier: "ProvinceVC") as! ProvinceVC
-//
-//provinceVC.doSomeThing()
-//
-//class Dog {
-//    func eat() {
-//        print("eat some thing")
-//    }
-//}
-//
-//let dog = Dog()
-//dog.eat()
 
