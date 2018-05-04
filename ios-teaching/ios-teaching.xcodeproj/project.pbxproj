@@ -24,6 +24,7 @@
 		F11BFD952099E23400351130 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD942099E23400351130 /* ProfileVC.swift */; };
 		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
+		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F11BFD942099E23400351130 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
+		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */,
 				F11BFD932099E20B00351130 /* MultiSectionTableView */,
 				F19B1813208A1144008AFE42 /* Common */,
 				F10D66AB2087706200B2E449 /* TableView */,
@@ -159,6 +162,14 @@
 				F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */,
+			);
+			path = SelfSizingTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */,
 				F10D66AA20876B6200B2E449 /* CornerRadiusButton.swift in Sources */,
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
+				F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */,
 				F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */,
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
