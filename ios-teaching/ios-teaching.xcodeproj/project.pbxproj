@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10AD7CA20A072B8007CAA65 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AD7C920A072B8007CAA65 /* IntroVC.swift */; };
+		F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AD7CB20A074CF007CAA65 /* IntroCell.swift */; };
 		F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66812087616E00B2E449 /* AppDelegate.swift */; };
 		F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66832087616E00B2E449 /* ProvinceVC.swift */; };
 		F10D66872087616E00B2E449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D66852087616E00B2E449 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10AD7C920A072B8007CAA65 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		F10AD7CB20A074CF007CAA65 /* IntroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCell.swift; sourceTree = "<group>"; };
 		F10D667E2087616E00B2E449 /* ios-teaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-teaching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10D66812087616E00B2E449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10D66832087616E00B2E449 /* ProvinceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceVC.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10AD7C820A0725E007CAA65 /* SimpleCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F10AD7C920A072B8007CAA65 /* IntroVC.swift */,
+				F10AD7CB20A074CF007CAA65 /* IntroCell.swift */,
+			);
+			path = SimpleCollectionView;
+			sourceTree = "<group>";
+		};
 		F10D66752087616E00B2E449 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F10AD7C820A0725E007CAA65 /* SimpleCollectionView */,
 				F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */,
 				F11BFD932099E20B00351130 /* MultiSectionTableView */,
 				F19B1813208A1144008AFE42 /* Common */,
@@ -280,6 +294,8 @@
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
 				F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */,
 				F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */,
+				F10AD7CA20A072B8007CAA65 /* IntroVC.swift in Sources */,
+				F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */,
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,

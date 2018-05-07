@@ -12,6 +12,8 @@ class SellSizingTableViewVC: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
+    let 🐶 = "dog"
+    
     var arrayData = ["Dưa hấu là một quả gì đó Dưa hấu là một quả gì đó Dưa hấu là một quả gì đó Dưa hấu là một quả gì đó Dưa hấu là một quả gì đó ", "Cà Chua Dưa hấu là một quả gì đó ", "Xoài Dưa hấu là một quả gì đó ", "Mực", "Mèo", "Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo"]
     
     override func viewDidLoad() {
