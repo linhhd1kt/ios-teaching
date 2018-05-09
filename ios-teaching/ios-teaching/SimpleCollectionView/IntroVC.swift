@@ -22,10 +22,11 @@ struct IntroItem {
 
 class IntroVC: UIViewController {
     
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var arrayData = [IntroItem]()
-    
     let cellId = "IntroCell"
     
     override func viewDidLoad() {
@@ -56,6 +57,16 @@ class IntroVC: UIViewController {
         
         collectionView.reloadData()
     }
+    
+    @IBAction func gotoMarket(_ sender: Any) {
+        
+        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let marketVC = mainStoryBoard.instantiateViewController(withIdentifier: SellSizingTableViewVC.className)
+        
+        self.navigationController?.pushViewController(marketVC, animated: true)
+    }
+    
 }
 
 extension IntroVC: UICollectionViewDataSource {

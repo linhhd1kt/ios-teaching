@@ -23,6 +23,8 @@ class SellSizingTableViewVC: UIViewController, UITableViewDataSource, UITableVie
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 20
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,6 +36,10 @@ class SellSizingTableViewVC: UIViewController, UITableViewDataSource, UITableVie
         let item = arrayData[indexPath.item]
         cell.setupCell(item)
         return cell
+    }
+
+    @IBAction func backToIntro(_ sender: Any) {
+       self.navigationController?.popViewController(animated: true)
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

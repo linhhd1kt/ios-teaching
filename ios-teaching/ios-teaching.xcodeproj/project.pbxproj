@@ -27,6 +27,10 @@
 		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
+		F1FC464B20A311450065C1EC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464920A311450065C1EC /* NotificationVC.swift */; };
+		F1FC464C20A311450065C1EC /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FC464A20A311450065C1EC /* NotificationVC.xib */; };
+		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
+		F1FC465120A315110065C1EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465020A315110065C1EC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
+		F1FC464920A311450065C1EC /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		F1FC464A20A311450065C1EC /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		F1FC465020A315110065C1EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,8 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F1FC464F20A314FD0065C1EC /* utils */,
+				F1FC464820A310FE0065C1EC /* ViewControllerFromXib */,
 				F10AD7C820A0725E007CAA65 /* SimpleCollectionView */,
 				F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */,
 				F11BFD932099E20B00351130 /* MultiSectionTableView */,
@@ -163,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F11BFD942099E23400351130 /* ProfileVC.swift */,
+				F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */,
 				F11BFD962099E2DA00351130 /* ProfileCell.swift */,
 				F11934742099E95300EE9CEC /* SettingCell.swift */,
 			);
@@ -184,6 +195,23 @@
 				F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */,
 			);
 			path = SelfSizingTableViewCell;
+			sourceTree = "<group>";
+		};
+		F1FC464820A310FE0065C1EC /* ViewControllerFromXib */ = {
+			isa = PBXGroup;
+			children = (
+				F1FC464920A311450065C1EC /* NotificationVC.swift */,
+				F1FC464A20A311450065C1EC /* NotificationVC.xib */,
+			);
+			path = ViewControllerFromXib;
+			sourceTree = "<group>";
+		};
+		F1FC464F20A314FD0065C1EC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1FC465020A315110065C1EC /* Extensions.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +300,7 @@
 				F10D668F2087616E00B2E449 /* LaunchScreen.storyboard in Resources */,
 				F10D668C2087616E00B2E449 /* Assets.xcassets in Resources */,
 				F10D66872087616E00B2E449 /* Main.storyboard in Resources */,
+				F1FC464C20A311450065C1EC /* NotificationVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +323,14 @@
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
 				F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */,
 				F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */,
+				F1FC464B20A311450065C1EC /* NotificationVC.swift in Sources */,
 				F10AD7CA20A072B8007CAA65 /* IntroVC.swift in Sources */,
+				F1FC465120A315110065C1EC /* Extensions.swift in Sources */,
 				F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */,
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
+				F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */,
 				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
 				F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */,

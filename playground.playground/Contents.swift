@@ -34,3 +34,47 @@ print(bArray)
 print(cArray)
 
 print(dArray)
+
+//
+//
+//class Person {
+//    var height = 10
+//
+//}
+//
+//extension Person {
+//
+//    var newheight {
+//        return self.height * 10
+//    }
+//
+//    func eat() {
+//        print("eating....")
+//    }
+//}
+//
+//let p = Person()
+//p.eat()
+//
+//print(p.height)
+000000
+
+extension UIColor {
+    var toHexString: String {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        return String(
+            format: "%02X%02X%02X",
+            Int(r * 0xff),
+            Int(g * 0xff),
+            Int(b * 0xff)
+        )
+    }
+}
+
+print(UIColor.green.toHexString)
