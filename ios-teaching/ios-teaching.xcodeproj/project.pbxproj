@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDDA07BBA8751E070007F956 /* Pods_ios_teaching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF066349866A61016AD20CDB /* Pods_ios_teaching.framework */; };
 		F10AD7CA20A072B8007CAA65 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AD7C920A072B8007CAA65 /* IntroVC.swift */; };
 		F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10AD7CB20A074CF007CAA65 /* IntroCell.swift */; };
 		F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D66812087616E00B2E449 /* AppDelegate.swift */; };
@@ -27,10 +28,10 @@
 		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
-		F1FC464B20A311450065C1EC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464920A311450065C1EC /* NotificationVC.swift */; };
-		F1FC464C20A311450065C1EC /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FC464A20A311450065C1EC /* NotificationVC.xib */; };
 		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
 		F1FC465120A315110065C1EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465020A315110065C1EC /* Extensions.swift */; };
+		F1FC465420A32AC50065C1EC /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465220A32AC50065C1EC /* NotificationVC.swift */; };
+		F1FC465520A32AC50065C1EC /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FC465320A32AC50065C1EC /* NotificationVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C18908B561C5BFE8A952B4F1 /* Pods-ios-teaching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-teaching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching.debug.xcconfig"; sourceTree = "<group>"; };
+		E08B68C6D8C69808980BF4BF /* Pods-ios-teaching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-teaching.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching.release.xcconfig"; sourceTree = "<group>"; };
+		EF066349866A61016AD20CDB /* Pods_ios_teaching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_teaching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10AD7C920A072B8007CAA65 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		F10AD7CB20A074CF007CAA65 /* IntroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCell.swift; sourceTree = "<group>"; };
 		F10D667E2087616E00B2E449 /* ios-teaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-teaching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +72,10 @@
 		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
-		F1FC464920A311450065C1EC /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
-		F1FC464A20A311450065C1EC /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		F1FC465020A315110065C1EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F1FC465220A32AC50065C1EC /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		F1FC465320A32AC50065C1EC /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDA07BBA8751E070007F956 /* Pods_ios_teaching.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F06FA004EDCF870A44D73B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF066349866A61016AD20CDB /* Pods_ios_teaching.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99A46A6D874EC20654364422 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C18908B561C5BFE8A952B4F1 /* Pods-ios-teaching.debug.xcconfig */,
+				E08B68C6D8C69808980BF4BF /* Pods-ios-teaching.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F10AD7C820A0725E007CAA65 /* SimpleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +129,8 @@
 				F10D66802087616E00B2E449 /* ios-teaching */,
 				F10D66982087616F00B2E449 /* ios-teachingUITests */,
 				F10D667F2087616E00B2E449 /* Products */,
+				99A46A6D874EC20654364422 /* Pods */,
+				5F06FA004EDCF870A44D73B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,8 +224,8 @@
 		F1FC464820A310FE0065C1EC /* ViewControllerFromXib */ = {
 			isa = PBXGroup;
 			children = (
-				F1FC464920A311450065C1EC /* NotificationVC.swift */,
-				F1FC464A20A311450065C1EC /* NotificationVC.xib */,
+				F1FC465220A32AC50065C1EC /* NotificationVC.swift */,
+				F1FC465320A32AC50065C1EC /* NotificationVC.xib */,
 			);
 			path = ViewControllerFromXib;
 			sourceTree = "<group>";
@@ -221,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F10D669E2087616F00B2E449 /* Build configuration list for PBXNativeTarget "ios-teaching" */;
 			buildPhases = (
+				D485A988AC3DB3E6D80B73DE /* [CP] Check Pods Manifest.lock */,
 				F10D667A2087616E00B2E449 /* Sources */,
 				F10D667B2087616E00B2E449 /* Frameworks */,
 				F10D667C2087616E00B2E449 /* Resources */,
+				6576EB36F74DAD6154FF6AA1 /* [CP] Embed Pods Frameworks */,
+				8306672727F12B734C2E923F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,7 +327,7 @@
 				F10D668F2087616E00B2E449 /* LaunchScreen.storyboard in Resources */,
 				F10D668C2087616E00B2E449 /* Assets.xcassets in Resources */,
 				F10D66872087616E00B2E449 /* Main.storyboard in Resources */,
-				F1FC464C20A311450065C1EC /* NotificationVC.xib in Resources */,
+				F1FC465520A32AC50065C1EC /* NotificationVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +340,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6576EB36F74DAD6154FF6AA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8306672727F12B734C2E923F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D485A988AC3DB3E6D80B73DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-teaching-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F10D667A2087616E00B2E449 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -323,7 +404,7 @@
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
 				F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */,
 				F10D66AF2087767F00B2E449 /* SellingCell.swift in Sources */,
-				F1FC464B20A311450065C1EC /* NotificationVC.swift in Sources */,
+				F1FC465420A32AC50065C1EC /* NotificationVC.swift in Sources */,
 				F10AD7CA20A072B8007CAA65 /* IntroVC.swift in Sources */,
 				F1FC465120A315110065C1EC /* Extensions.swift in Sources */,
 				F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */,
@@ -487,6 +568,7 @@
 		};
 		F10D669F2087616F00B2E449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18908B561C5BFE8A952B4F1 /* Pods-ios-teaching.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +584,7 @@
 		};
 		F10D66A02087616F00B2E449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08B68C6D8C69808980BF4BF /* Pods-ios-teaching.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

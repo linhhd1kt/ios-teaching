@@ -57,7 +57,7 @@ print(dArray)
 //p.eat()
 //
 //print(p.height)
-000000
+//000000
 
 extension UIColor {
     var toHexString: String {
@@ -78,3 +78,43 @@ extension UIColor {
 }
 
 print(UIColor.green.toHexString)
+
+
+
+
+
+var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+
+
+
+
+print(airports["YYZ"])
+
+airports["YYZ"] = "Da Nang"
+
+print(airports["YYZ"])
+
+airports["123"] = "hi hi"
+
+print(airports)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

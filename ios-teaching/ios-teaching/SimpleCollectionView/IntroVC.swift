@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 enum IntrolSize {
     case small
@@ -60,11 +61,14 @@ class IntroVC: UIViewController {
     
     @IBAction func gotoMarket(_ sender: Any) {
         
-        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+//        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+//
+//        let marketVC = mainStoryBoard.instantiateViewController(withIdentifier: SellSizingTableViewVC.className)
+//
+//        self.navigationController?.pushViewController(marketVC, animated: true)
         
-        let marketVC = mainStoryBoard.instantiateViewController(withIdentifier: SellSizingTableViewVC.className)
-        
-        self.navigationController?.pushViewController(marketVC, animated: true)
+        let newVC = NotificationVC(nibName: NotificationVC.className, bundle: nil)
+         self.navigationController?.pushViewController(newVC, animated: true)
     }
     
 }
