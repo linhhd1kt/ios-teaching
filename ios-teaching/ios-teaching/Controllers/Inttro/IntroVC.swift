@@ -9,25 +9,11 @@
 import UIKit
 import Alamofire
 
-enum IntrolSize {
-    case small
-    case large
-}
-
-struct IntroItem {
-    var titleName: String
-    var image: UIImage
-    var size: IntrolSize = .small
-    
-}
-
 class IntroVC: UIViewController {
-    
-    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var arrayData = [IntroItem]()
+    var arrayData = [(IntroItem)]()
     let cellId = "IntroCell"
     
     override func viewDidLoad() {
@@ -55,20 +41,12 @@ class IntroVC: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        
         collectionView.reloadData()
     }
     
     @IBAction func gotoMarket(_ sender: Any) {
-        
-//        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
-//
-//        let marketVC = mainStoryBoard.instantiateViewController(withIdentifier: SellSizingTableViewVC.className)
-//
-//        self.navigationController?.pushViewController(marketVC, animated: true)
-        
         let newVC = NotificationVC(nibName: NotificationVC.className, bundle: nil)
-         self.navigationController?.pushViewController(newVC, animated: true)
+        self.navigationController?.pushViewController(newVC, animated: true)
     }
     
 }

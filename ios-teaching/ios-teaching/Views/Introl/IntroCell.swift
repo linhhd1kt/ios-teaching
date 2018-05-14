@@ -12,11 +12,6 @@ class IntroCell: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-//    func setup(title: String, image: UIImage) {
-//        labelTitle.text = title
-//        imageView.image = image
-//    }
-    
     func setup(_ item: IntroItem) {
         labelTitle.text = item.titleName
         imageView.image = item.image

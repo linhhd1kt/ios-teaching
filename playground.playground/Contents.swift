@@ -83,23 +83,65 @@ print(UIColor.green.toHexString)
 
 
 
-var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+//var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+//
+//
+//
+//
+//print(airports["YYZ"])
+//
+//airports["YYZ"] = "Da Nang"
+//
+//print(airports["YYZ"])
+//
+//airports["123"] = "hi hi"
+//
+//print(airports)
 
 
+class Dog {
+    
+    static let legs = 4
+    
+    var color:String!
+    
+    init(color: String) {
+        self.color = color
+    }
+}
+
+print(Dog.legs)
+
+let yellowDog = Dog(color: "yellow")
+
+print(yellowDog.color)
 
 
-print(airports["YYZ"])
+//
+//
+//final class Person {
+//
+//    static let shared = Person()
+//
+//    var height = "1m8"
+//
+//    private init() {}
+//
+//}
+//
+//print(Person.shared.height)
+//
+//Person.height = "2m"
+//
+//print(Person.shared.height)
 
-airports["YYZ"] = "Da Nang"
 
-print(airports["YYZ"])
-
-airports["123"] = "hi hi"
-
-print(airports)
-
-
-
+//
+//let p1 = Person()
+//print(p1.height)
+//
+//let p2 = Person()
+//print(p2.height)
 
 
 

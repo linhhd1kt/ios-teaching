@@ -27,6 +27,8 @@
 		F11BFD952099E23400351130 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD942099E23400351130 /* ProfileVC.swift */; };
 		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
+		F1A2139B20A9AB1C008E9547 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2139A20A9AB1C008E9547 /* Intro.swift */; };
+		F1A213A720A9B060008E9547 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A213A620A9B060008E9547 /* Api.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
 		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
 		F1FC465120A315110065C1EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465020A315110065C1EC /* Extensions.swift */; };
@@ -71,6 +73,8 @@
 		F11BFD942099E23400351130 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
+		F1A2139A20A9AB1C008E9547 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		F1A213A620A9B060008E9547 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
 		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		F1FC465020A315110065C1EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -114,15 +118,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F10AD7C820A0725E007CAA65 /* SimpleCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				F10AD7C920A072B8007CAA65 /* IntroVC.swift */,
-				F10AD7CB20A074CF007CAA65 /* IntroCell.swift */,
-			);
-			path = SimpleCollectionView;
-			sourceTree = "<group>";
-		};
 		F10D66752087616E00B2E449 = {
 			isa = PBXGroup;
 			children = (
@@ -146,14 +141,11 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F1A213A220A9ACB8008E9547 /* GeniricClass */,
+				F1A2139320A9AA98008E9547 /* Controllers */,
+				F1A2139220A9AA91008E9547 /* Modal */,
+				F1A2139120A9AA8A008E9547 /* Views */,
 				F1FC464F20A314FD0065C1EC /* utils */,
-				F1FC464820A310FE0065C1EC /* ViewControllerFromXib */,
-				F10AD7C820A0725E007CAA65 /* SimpleCollectionView */,
-				F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */,
-				F11BFD932099E20B00351130 /* MultiSectionTableView */,
-				F19B1813208A1144008AFE42 /* Common */,
-				F10D66AB2087706200B2E449 /* TableView */,
-				F10D66A4208761F000B2E449 /* Autolayout */,
 				F10D66812087616E00B2E449 /* AppDelegate.swift */,
 				F10D66852087616E00B2E449 /* Main.storyboard */,
 				F10D668B2087616E00B2E449 /* Assets.xcassets */,
@@ -173,37 +165,6 @@
 			path = "ios-teachingUITests";
 			sourceTree = "<group>";
 		};
-		F10D66A4208761F000B2E449 /* Autolayout */ = {
-			isa = PBXGroup;
-			children = (
-				F10D66A52087623F00B2E449 /* LoginVC.swift */,
-				F10D66A7208767F100B2E449 /* CornerRadiusView.swift */,
-				F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */,
-				F11BFD912099E07C00351130 /* RoundAvatar.swift */,
-			);
-			path = Autolayout;
-			sourceTree = "<group>";
-		};
-		F10D66AB2087706200B2E449 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				F10D66AC208770A600B2E449 /* SellingTableVC.swift */,
-				F10D66AE2087767F00B2E449 /* SellingCell.swift */,
-			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		F11BFD932099E20B00351130 /* MultiSectionTableView */ = {
-			isa = PBXGroup;
-			children = (
-				F11BFD942099E23400351130 /* ProfileVC.swift */,
-				F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */,
-				F11BFD962099E2DA00351130 /* ProfileCell.swift */,
-				F11934742099E95300EE9CEC /* SettingCell.swift */,
-			);
-			path = MultiSectionTableView;
-			sourceTree = "<group>";
-		};
 		F19B1813208A1144008AFE42 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,27 +174,168 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		F1F75214209C7AD4009A87A2 /* SelfSizingTableViewCell */ = {
+		F1A2139120A9AA8A008E9547 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */,
+				F19B1813208A1144008AFE42 /* Common */,
+				F11934742099E95300EE9CEC /* SettingCell.swift */,
+				F1A213A420A9AD60008E9547 /* Profile */,
+				F1A213A120A9AC35008E9547 /* Auth */,
+				F1A2139C20A9AB44008E9547 /* Notification */,
+				F1A2139920A9AAF7008E9547 /* Sell */,
+				F1A2139620A9AADD008E9547 /* Introl */,
 			);
-			path = SelfSizingTableViewCell;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		F1FC464820A310FE0065C1EC /* ViewControllerFromXib */ = {
+		F1A2139220A9AA91008E9547 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				F1A213A020A9AC2D008E9547 /* Auth */,
+				F1A2139D20A9AB51008E9547 /* Notification */,
+				F1A2139820A9AAF2008E9547 /* Sell */,
+				F1A2139520A9AAD5008E9547 /* Introl */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F1A2139320A9AA98008E9547 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1A213A320A9AD30008E9547 /* Profile */,
+				F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */,
+				F1A2139F20A9AC0E008E9547 /* Auth */,
+				F1A2139E20A9AB55008E9547 /* Notification */,
+				F1A2139720A9AAEB008E9547 /* Sell */,
+				F1A2139420A9AACC008E9547 /* Inttro */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1A2139420A9AACC008E9547 /* Inttro */ = {
+			isa = PBXGroup;
+			children = (
+				F10AD7C920A072B8007CAA65 /* IntroVC.swift */,
+			);
+			path = Inttro;
+			sourceTree = "<group>";
+		};
+		F1A2139520A9AAD5008E9547 /* Introl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Introl;
+			sourceTree = "<group>";
+		};
+		F1A2139620A9AADD008E9547 /* Introl */ = {
+			isa = PBXGroup;
+			children = (
+				F10AD7CB20A074CF007CAA65 /* IntroCell.swift */,
+				F1A2139A20A9AB1C008E9547 /* Intro.swift */,
+			);
+			path = Introl;
+			sourceTree = "<group>";
+		};
+		F1A2139720A9AAEB008E9547 /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+				F10D66AC208770A600B2E449 /* SellingTableVC.swift */,
+			);
+			path = Sell;
+			sourceTree = "<group>";
+		};
+		F1A2139820A9AAF2008E9547 /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sell;
+			sourceTree = "<group>";
+		};
+		F1A2139920A9AAF7008E9547 /* Sell */ = {
+			isa = PBXGroup;
+			children = (
+				F10D66AE2087767F00B2E449 /* SellingCell.swift */,
+			);
+			path = Sell;
+			sourceTree = "<group>";
+		};
+		F1A2139C20A9AB44008E9547 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F1FC465320A32AC50065C1EC /* NotificationVC.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F1A2139D20A9AB51008E9547 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F1A2139E20A9AB55008E9547 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
 				F1FC465220A32AC50065C1EC /* NotificationVC.swift */,
-				F1FC465320A32AC50065C1EC /* NotificationVC.xib */,
 			);
-			path = ViewControllerFromXib;
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F1A2139F20A9AC0E008E9547 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F10D66A52087623F00B2E449 /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1A213A020A9AC2D008E9547 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1A213A120A9AC35008E9547 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1A213A220A9ACB8008E9547 /* GeniricClass */ = {
+			isa = PBXGroup;
+			children = (
+				F10D66A7208767F100B2E449 /* CornerRadiusView.swift */,
+				F10D66A920876B6200B2E449 /* CornerRadiusButton.swift */,
+				F11BFD912099E07C00351130 /* RoundAvatar.swift */,
+			);
+			path = GeniricClass;
+			sourceTree = "<group>";
+		};
+		F1A213A320A9AD30008E9547 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F11BFD942099E23400351130 /* ProfileVC.swift */,
+				F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F1A213A420A9AD60008E9547 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F11BFD962099E2DA00351130 /* ProfileCell.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		F1FC464F20A314FD0065C1EC /* utils */ = {
 			isa = PBXGroup;
 			children = (
 				F1FC465020A315110065C1EC /* Extensions.swift */,
+				F1A213A620A9B060008E9547 /* Api.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -409,7 +511,9 @@
 				F1FC465120A315110065C1EC /* Extensions.swift in Sources */,
 				F10AD7CC20A074CF007CAA65 /* IntroCell.swift in Sources */,
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
+				F1A2139B20A9AB1C008E9547 /* Intro.swift in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
+				F1A213A720A9B060008E9547 /* Api.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
 				F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */,
 				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
