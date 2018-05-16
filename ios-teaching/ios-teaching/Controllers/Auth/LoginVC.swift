@@ -26,8 +26,28 @@ class LoginVC: UIViewController {
         self.performSegue(withIdentifier: "loginSuccessSegue", sender: self)
     }
     
+    func login_callback(error: String, isLoginSuccess: Bool) {
+        if isLoginSuccess {
+            self.performSegue(withIdentifier: "loginSuccessSegue", sender: self)
+        } else {
+            print("login failed")
+        }
+    }
+    
+    // sample call back
+    func callback(_ text: String) {
+        print(text)
+    }
+    
     @IBAction func loginAction(_ sender: UIButton) {
-        Api.shared.login(email: userNameTextField.text!, password: passwordTextField.text!, callback: loginCallBack)
+        
+        callback("hi")
+        
+        Api.shared.tellHello(callback: callback)
+        
+        Api.shared.login(email: userNameTextField.text!, password: passwordTextField.text!, callback: login_callback)
+        
+
         
     }
     
