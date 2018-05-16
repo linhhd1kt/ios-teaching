@@ -223,6 +223,7 @@
 		F1A2139520A9AAD5008E9547 /* Introl */ = {
 			isa = PBXGroup;
 			children = (
+				F1A2139A20A9AB1C008E9547 /* Intro.swift */,
 			);
 			path = Introl;
 			sourceTree = "<group>";
@@ -231,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				F10AD7CB20A074CF007CAA65 /* IntroCell.swift */,
-				F1A2139A20A9AB1C008E9547 /* Intro.swift */,
 			);
 			path = Introl;
 			sourceTree = "<group>";
