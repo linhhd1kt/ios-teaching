@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 
-
 // Bai ve auto layout
 class LoginVC: UIViewController {
     
@@ -42,9 +41,7 @@ class LoginVC: UIViewController {
     @IBAction func loginAction(_ sender: UIButton) {
         
         callback("hi")
-        
         Api.shared.tellHello(callback: callback)
-        
         Api.shared.login(email: userNameTextField.text!, password: passwordTextField.text!, callback: login_callback)
         
 

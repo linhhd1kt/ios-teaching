@@ -15,6 +15,17 @@ extension Int {
     }
 }
 
+extension String {
+    func toDate() -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        if let date = dateFormatter.date(from: self) {
+            return date
+        }
+        return Date()
+    }
+}
+
 extension UIColor {
     var toHexString: String {
         

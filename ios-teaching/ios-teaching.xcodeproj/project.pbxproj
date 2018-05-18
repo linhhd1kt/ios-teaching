@@ -29,6 +29,10 @@
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 		F1A2139B20A9AB1C008E9547 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2139A20A9AB1C008E9547 /* Intro.swift */; };
 		F1A213A720A9B060008E9547 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A213A620A9B060008E9547 /* Api.swift */; };
+		F1A8C39B20AEF1E7001A3B74 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39A20AEF1E7001A3B74 /* Product.swift */; };
+		F1A8C39D20AEF661001A3B74 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39C20AEF661001A3B74 /* Category.swift */; };
+		F1A8C39F20AEF68A001A3B74 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39E20AEF68A001A3B74 /* Unit.swift */; };
+		F1A8C3A120AEF94A001A3B74 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
 		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
 		F1FC465120A315110065C1EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465020A315110065C1EC /* Extensions.swift */; };
@@ -75,6 +79,10 @@
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 		F1A2139A20A9AB1C008E9547 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		F1A213A620A9B060008E9547 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		F1A8C39A20AEF1E7001A3B74 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F1A8C39C20AEF661001A3B74 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F1A8C39E20AEF68A001A3B74 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
 		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		F1FC465020A315110065C1EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -247,6 +255,10 @@
 		F1A2139820A9AAF2008E9547 /* Sell */ = {
 			isa = PBXGroup;
 			children = (
+				F1A8C39A20AEF1E7001A3B74 /* Product.swift */,
+				F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */,
+				F1A8C39E20AEF68A001A3B74 /* Unit.swift */,
+				F1A8C39C20AEF661001A3B74 /* Category.swift */,
 			);
 			path = Sell;
 			sourceTree = "<group>";
@@ -503,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A8C39B20AEF1E7001A3B74 /* Product.swift in Sources */,
 				F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */,
 				F10D66AA20876B6200B2E449 /* CornerRadiusButton.swift in Sources */,
 				F10D66A8208767F100B2E449 /* CornerRadiusView.swift in Sources */,
@@ -515,13 +528,16 @@
 				F10D668A2087616E00B2E449 /* ios_teaching.xcdatamodeld in Sources */,
 				F1A2139B20A9AB1C008E9547 /* Intro.swift in Sources */,
 				F10D66AD208770A600B2E449 /* SellingTableVC.swift in Sources */,
+				F1A8C3A120AEF94A001A3B74 /* ProductInfo.swift in Sources */,
 				F1A213A720A9B060008E9547 /* Api.swift in Sources */,
+				F1A8C39D20AEF661001A3B74 /* Category.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
 				F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */,
 				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
 				F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */,
 				F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */,
+				F1A8C39F20AEF68A001A3B74 /* Unit.swift in Sources */,
 				F11BFD952099E23400351130 /* ProfileVC.swift in Sources */,
 				F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */,
 			);

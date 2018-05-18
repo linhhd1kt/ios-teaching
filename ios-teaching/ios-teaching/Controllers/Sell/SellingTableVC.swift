@@ -12,13 +12,21 @@ class SellingTableVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
-    var arrayData = ["Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo", "Dưa hấu", "Cà Chua", "Xoài", "Mực", "Mèo"]
+    var arrayData = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         
+        Api.shared.fetchProducts { (productInfo, error) in
+            guard error == nil else {
+                print(error ?? "system error")
+                return
+            }
+            self.arrayData = productInfo.data
+            self.tableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

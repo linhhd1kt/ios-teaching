@@ -105,8 +105,8 @@ class Dog {
     
     var color:String!
     
-    init(color: String) {
-        self.color = color
+    init(color1: String) {
+        color = color1
     }
 }
 

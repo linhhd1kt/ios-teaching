@@ -33,8 +33,8 @@ class SellSizingTableViewVC: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SellingCell") as! SellingCell
-        let item = arrayData[indexPath.item]
-        cell.setupCell(item)
+//        let item = arrayData[indexPath.item]
+//        cell.setupCell(item)
         return cell
     }
 
