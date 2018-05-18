@@ -25,6 +25,7 @@ class SellingTableVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 return
             }
             self.arrayData = productInfo.data
+            // phải load lại tableview sau khi update data
             self.tableView.reloadData()
         }
     }

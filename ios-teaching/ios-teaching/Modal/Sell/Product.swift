@@ -12,6 +12,7 @@ import SwiftyJSON
 //
 //Đường dẫn truy cập đến file ảnh: http://api.baongocstore.com/storage/products/dell.jpg_5aa20240a1bad.jpg
 
+// build một modal product để hiển thị product trên màn hính sell
 
 struct Product {
     var id: Int

@@ -111,10 +111,11 @@ final class Api {
         }
     }
     
+    // lấy danh sách các product từ server về
     func fetchProducts(callback: @escaping (ProductInfo, String?)->()) {
         let path = "products"
         let url = baseUrl + path
-        
+        // nếu không define phương thức .post hay get thì default là .get
         Alamofire.request(url, headers: headers).responseJSON { response in
             switch response.result {
             case .success(let value):
