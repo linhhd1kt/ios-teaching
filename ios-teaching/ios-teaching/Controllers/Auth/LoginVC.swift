@@ -9,6 +9,9 @@
 import UIKit
 import Alamofire
 
+let EMAIL_KEY = "EMAIL_KEY"
+let PASSWORD_KEY = "PASSWORD_KEY"
+
 // Bai ve auto layout
 class LoginVC: UIViewController {
     
@@ -20,32 +23,22 @@ class LoginVC: UIViewController {
         passwordTextField.text = "12345678"
     }
     
-    func loginCallBack(data: DataResponse<Any>) {
-        print(data)
-        self.performSegue(withIdentifier: "loginSuccessSegue", sender: self)
-    }
-    
-    func login_callback(error: String, isLoginSuccess: Bool) {
-        if isLoginSuccess {
-            self.performSegue(withIdentifier: "loginSuccessSegue", sender: self)
-        } else {
-            print("login failed")
+    @IBAction func loginAction(_ sender: UIButton) {
+        Api.shared.login(email: userNameTextField.text!, password: passwordTextField.text!) { (error, isSuccess) in
+            if isSuccess {
+                UserDefaults.standard.set(self.userNameTextField.text!, forKey: EMAIL_KEY)
+                UserDefaults.standard.set(self.passwordTextField.text!, forKey: PASSWORD_KEY)
+                
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                print("login failed")
+            }
         }
     }
     
-    // sample call back
-    func callback(_ text: String) {
-        print(text)
+    @IBAction func closeAtion(_ sender: UIButton) {
+        self.dismiss(animated: true) {
+            print("dissmiss finish")
+        }
     }
-    
-    @IBAction func loginAction(_ sender: UIButton) {
-        
-        callback("hi")
-        Api.shared.tellHello(callback: callback)
-        Api.shared.login(email: userNameTextField.text!, password: passwordTextField.text!, callback: login_callback)
-        
-
-        
-    }
-    
 }

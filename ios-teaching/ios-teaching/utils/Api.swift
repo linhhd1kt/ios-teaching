@@ -21,35 +21,35 @@ final class Api {
     private init() {}
     
     // sample call back
-    func tellHello(callback: @escaping (String) -> ()) {
-        callback("hello")
-    }
+//    func tellHello(callback: @escaping (String) -> ()) {
+//        callback("hello")
+//    }
     
-    func login(email: String, password: String, callback: @escaping (DataResponse<Any>)->()) {
-        let path = "auth/login"
-        let url = baseUrl + path
-        
-        let paramDict:[String: Any] = [
-            "email": email,
-            "password": password,
-            ]
-
-        Alamofire.request(url, method: .post, parameters: paramDict, encoding: URLEncoding.default).responseJSON { (data) in
-            
-            if let result = data.result.value as? NSDictionary {
-                if let resultData = result["data"] as? NSDictionary {
-                    if let token = resultData["access_token"] {
-                        print(token)
-                        if token is String {
-                            self.token = token as! String
-                        }
-                        
-                    }
-                }
-            }
-           callback(data)
-        }
-    }
+//    func login(email: String, password: String, callback: @escaping (DataResponse<Any>)->()) {
+//        let path = "auth/login"
+//        let url = baseUrl + path
+//
+//        let paramDict:[String: Any] = [
+//            "email": email,
+//            "password": password,
+//            ]
+//
+//        Alamofire.request(url, method: .post, parameters: paramDict, encoding: URLEncoding.default).responseJSON { (data) in
+//
+//            if let result = data.result.value as? NSDictionary {
+//                if let resultData = result["data"] as? NSDictionary {
+//                    if let token = resultData["access_token"] {
+//                        print(token)
+//                        if token is String {
+//                            self.token = token as! String
+//                        }
+//
+//                    }
+//                }
+//            }
+//           callback(data)
+//        }
+//    }
     
     func login(email: String, password: String, callback: @escaping (String, Bool)->()) {
         

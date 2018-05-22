@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6P-nS-hBE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -92,9 +92,6 @@
                                 <state key="normal" title="Quên mật khẩu">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Y7h-kg-l1A" kind="show" id="zPZ-Ax-bC3"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uda-qK-p7X" customClass="CornerRadiusButton" customModule="ios_teaching" customModuleProvider="target">
                                 <rect key="frame" x="197.5" y="597" width="157.5" height="40"/>
@@ -120,10 +117,24 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-kw-Snr">
+                                <rect key="frame" x="317" y="32" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="2Bl-Xd-PAF"/>
+                                    <constraint firstAttribute="height" constant="46" id="A5X-wn-49o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="closeAtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHM-3q-4ks"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.92196877004393896" blue="0.37014710809860729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sH9-kw-Snr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="545-s7-tD8"/>
                             <constraint firstItem="Gm3-gP-7TZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="67A-Oq-9Qt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sH9-kw-Snr" secondAttribute="trailing" constant="12" id="76O-dD-K9H"/>
                             <constraint firstItem="g4p-L6-ayO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9ZN-Lt-rc0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PyQ-QL-NaY" secondAttribute="bottom" constant="30" id="HW2-EX-4UP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gm3-gP-7TZ" secondAttribute="trailing" constant="20" id="PEe-fa-yhN"/>
@@ -147,14 +158,13 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Rh7-Cx-hf9" id="ZDD-RR-GdY"/>
                         <outlet property="userNameTextField" destination="eEW-0a-rUW" id="Dho-v9-nPm"/>
-                        <segue destination="OXo-hb-Ado" kind="show" identifier="loginSuccessSegue" id="Q4Y-oB-UL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="95"/>
+            <point key="canvasLocation" x="650" y="818"/>
         </scene>
-        <!--Selling TableVC-->
+        <!--Tôi bán-->
         <scene sceneID="qOF-9h-LcI">
             <objects>
                 <viewController storyboardIdentifier="SellingTableVC" id="OXo-hb-Ado" customClass="SellingTableVC" customModule="ios_teaching" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cXM-cq-fRU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellingCell" rowHeight="62" id="uya-kX-BXD" customClass="SellingCell" customModule="ios_teaching" customModuleProvider="target">
@@ -219,15 +229,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PGG-R9-Wkb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Tôi bán" landscapeImage="ic_facebook" id="ywt-Sh-kd4"/>
                     <connections>
                         <outlet property="tableView" destination="cXM-cq-fRU" id="rpx-Nv-vjh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjv-vX-JJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="95"/>
+            <point key="canvasLocation" x="2700" y="-298"/>
         </scene>
-        <!--ProfileVC-->
+        <!--Thêm-->
         <scene sceneID="Lg3-jF-8e9">
             <objects>
                 <viewController storyboardIdentifier="ProfileVC" id="wLR-TS-s3P" customClass="ProfileVC" customModule="ios_teaching" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,7 +247,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zsu-Av-zat">
-                                <rect key="frame" x="12" y="32" width="351" height="623"/>
+                                <rect key="frame" x="12" y="32" width="351" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="9ot-bx-J7J">
                                     <rect key="frame" x="0.0" y="0.0" width="351" height="158"/>
@@ -342,13 +353,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hQ8-mF-691"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Thêm" image="ic_default_user" id="W31-ig-IVj"/>
                     <connections>
                         <outlet property="tableView" destination="zsu-Av-zat" id="8ji-fm-QbB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQa-CW-pH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2264.8000000000002" y="-234.33283358320841"/>
+            <point key="canvasLocation" x="2630" y="2244"/>
         </scene>
         <!--ProvinceVC-->
         <scene sceneID="0Xb-ml-YHW">
@@ -404,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1g-ve-5hU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="988"/>
+            <point key="canvasLocation" x="1663" y="86"/>
         </scene>
         <!--Sell Sizing Table ViewVC-->
         <scene sceneID="HMh-h4-RX4">
@@ -484,7 +496,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JK-tT-En9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3340" y="1332"/>
+            <point key="canvasLocation" x="3537" y="1332"/>
         </scene>
         <!--IntroVC-->
         <scene sceneID="M0v-is-XsN">
@@ -572,12 +584,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtZ-NM-0g3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3340" y="496"/>
+            <point key="canvasLocation" x="3505" y="496"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="6HL-Ml-5XS">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u6P-nS-hBE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="u6P-nS-hBE" customClass="TabBarVC" customModule="ios_teaching" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0wY-Lk-OuA">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -587,17 +599,19 @@
                     <connections>
                         <segue destination="Jv6-Vk-PEe" kind="relationship" relationship="viewControllers" id="bJI-vg-dwo"/>
                         <segue destination="nzq-Is-wxZ" kind="relationship" relationship="viewControllers" id="LeG-v8-GKH"/>
+                        <segue destination="OXo-hb-Ado" kind="relationship" relationship="viewControllers" id="EfQ-to-GNk"/>
+                        <segue destination="wLR-TS-s3P" kind="relationship" relationship="viewControllers" id="77Y-Qk-Ync"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mp-bt-m1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="818.59070464767626"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Đi chợ-->
         <scene sceneID="nQv-gr-9mj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jv6-Vk-PEe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="d45-oC-szp"/>
+                    <tabBarItem key="tabBarItem" title="Đi chợ" image="ic_coin" id="d45-oC-szp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rxN-4W-Reb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -612,11 +626,11 @@
             </objects>
             <point key="canvasLocation" x="2675.1999999999998" y="496.55172413793105"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Thông báo-->
         <scene sceneID="zS7-vV-Xbb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nzq-Is-wxZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="fbH-6p-Qqw"/>
+                    <tabBarItem key="tabBarItem" title="Thông báo" image="ic_facebook" id="fbH-6p-Qqw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a23-zE-UUc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
