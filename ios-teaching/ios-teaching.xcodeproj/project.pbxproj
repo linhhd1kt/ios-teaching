@@ -34,6 +34,7 @@
 		F1A8C39D20AEF661001A3B74 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39C20AEF661001A3B74 /* Category.swift */; };
 		F1A8C39F20AEF68A001A3B74 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39E20AEF68A001A3B74 /* Unit.swift */; };
 		F1A8C3A120AEF94A001A3B74 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */; };
+		F1E6832220B587AD005824A6 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6832120B587AD005824A6 /* ScrollViewVC.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
 		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
 		F1FC465120A315110065C1EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC465020A315110065C1EC /* Extensions.swift */; };
@@ -85,6 +86,7 @@
 		F1A8C39C20AEF661001A3B74 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F1A8C39E20AEF68A001A3B74 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		F1E6832120B587AD005824A6 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
 		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		F1FC465020A315110065C1EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F1E6831F20B58773005824A6 /* Tutorial */,
 				F1A213A220A9ACB8008E9547 /* GeniricClass */,
 				F1A2139320A9AA98008E9547 /* Controllers */,
 				F1A2139220A9AA91008E9547 /* Modal */,
@@ -344,6 +347,22 @@
 				F11BFD962099E2DA00351130 /* ProfileCell.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		F1E6831F20B58773005824A6 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6832020B58799005824A6 /* ScrollView */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		F1E6832020B58799005824A6 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6832120B587AD005824A6 /* ScrollViewVC.swift */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 		F1FC464F20A314FD0065C1EC /* utils */ = {
@@ -543,6 +562,7 @@
 				F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */,
 				F1A8C39F20AEF68A001A3B74 /* Unit.swift in Sources */,
 				F11BFD952099E23400351130 /* ProfileVC.swift in Sources */,
+				F1E6832220B587AD005824A6 /* ScrollViewVC.swift in Sources */,
 				F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
