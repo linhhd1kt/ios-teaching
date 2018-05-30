@@ -39,6 +39,15 @@ class ImagePickerVC: UIViewController, UIScrollViewDelegate {
                 self.view.layoutIfNeeded()
             })
         }
-        currentOffset = offset
+//        currentOffset = offsetAuthVC
+    }
+    @IBAction func openXibVCAction(_ sender: Any) {
+        
+        let authVC = AuthVC(nibName: "AuthVC", bundle: nil)
+        
+//        self.navigationController?.pushViewController(authVC, animated: true)
+        
+        self.present(authVC, animated: true, completion: nil)
+        
     }
 }

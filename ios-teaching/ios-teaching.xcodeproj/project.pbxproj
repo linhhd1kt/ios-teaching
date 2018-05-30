@@ -26,6 +26,9 @@
 		F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD912099E07C00351130 /* RoundAvatar.swift */; };
 		F11BFD952099E23400351130 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD942099E23400351130 /* ProfileVC.swift */; };
 		F11BFD972099E2DA00351130 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BFD962099E2DA00351130 /* ProfileCell.swift */; };
+		F1734EAD20BEC3BF00CFCF78 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1734EAB20BEC3BF00CFCF78 /* AuthVC.swift */; };
+		F1734EAE20BEC3BF00CFCF78 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1734EAC20BEC3BF00CFCF78 /* AuthVC.xib */; };
+		F1734EB120BECA8500CFCF78 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1734EB020BECA8500CFCF78 /* CustomVC.swift */; };
 		F1745CE720B2EC070076B600 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1745CE620B2EC070076B600 /* TabBarVC.swift */; };
 		F19B1815208A1D0C008AFE42 /* ProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */; };
 		F1A01E1820B915700098F593 /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A01E1720B915700098F593 /* ImagePickerVC.swift */; };
@@ -79,6 +82,9 @@
 		F11BFD912099E07C00351130 /* RoundAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundAvatar.swift; sourceTree = "<group>"; };
 		F11BFD942099E23400351130 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F11BFD962099E2DA00351130 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		F1734EAB20BEC3BF00CFCF78 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		F1734EAC20BEC3BF00CFCF78 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
+		F1734EB020BECA8500CFCF78 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
 		F1745CE620B2EC070076B600 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		F19B1814208A1D0C008AFE42 /* ProvinceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceCell.swift; sourceTree = "<group>"; };
 		F1A01E1720B915700098F593 /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
@@ -155,13 +161,13 @@
 		F10D66802087616E00B2E449 /* ios-teaching */ = {
 			isa = PBXGroup;
 			children = (
+				F10D66812087616E00B2E449 /* AppDelegate.swift */,
 				F1E6831F20B58773005824A6 /* Tutorial */,
 				F1A213A220A9ACB8008E9547 /* GeniricClass */,
 				F1A2139320A9AA98008E9547 /* Controllers */,
 				F1A2139220A9AA91008E9547 /* Modal */,
 				F1A2139120A9AA8A008E9547 /* Views */,
 				F1FC464F20A314FD0065C1EC /* utils */,
-				F10D66812087616E00B2E449 /* AppDelegate.swift */,
 				F10D66852087616E00B2E449 /* Main.storyboard */,
 				F10D668B2087616E00B2E449 /* Assets.xcassets */,
 				F10D668D2087616E00B2E449 /* LaunchScreen.storyboard */,
@@ -178,6 +184,14 @@
 				F10D669B2087616F00B2E449 /* Info.plist */,
 			);
 			path = "ios-teachingUITests";
+			sourceTree = "<group>";
+		};
+		F1734EAF20BECA6C00CFCF78 /* CustomUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1734EB020BECA8500CFCF78 /* CustomVC.swift */,
+			);
+			path = CustomUIViewController;
 			sourceTree = "<group>";
 		};
 		F19B1813208A1144008AFE42 /* Common */ = {
@@ -328,6 +342,8 @@
 		F1A213A120A9AC35008E9547 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F1734EAB20BEC3BF00CFCF78 /* AuthVC.swift */,
+				F1734EAC20BEC3BF00CFCF78 /* AuthVC.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -362,6 +378,7 @@
 		F1E6831F20B58773005824A6 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				F1734EAF20BECA6C00CFCF78 /* CustomUIViewController */,
 				F1A01E1620B915700098F593 /* ImagePicker */,
 				F1E6832020B58799005824A6 /* ScrollView */,
 			);
@@ -471,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1734EAE20BEC3BF00CFCF78 /* AuthVC.xib in Resources */,
 				F10D668F2087616E00B2E449 /* LaunchScreen.storyboard in Resources */,
 				F10D668C2087616E00B2E449 /* Assets.xcassets in Resources */,
 				F10D66872087616E00B2E449 /* Main.storyboard in Resources */,
@@ -567,7 +585,9 @@
 				F1A8C39D20AEF661001A3B74 /* Category.swift in Sources */,
 				F10D66842087616E00B2E449 /* ProvinceVC.swift in Sources */,
 				F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */,
+				F1734EAD20BEC3BF00CFCF78 /* AuthVC.swift in Sources */,
 				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
+				F1734EB120BECA8500CFCF78 /* CustomVC.swift in Sources */,
 				F1A01E1820B915700098F593 /* ImagePickerVC.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
 				F10D66822087616E00B2E449 /* AppDelegate.swift in Sources */,
