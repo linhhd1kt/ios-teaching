@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class IntroVC: UIViewController {
+class IntroVC: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     

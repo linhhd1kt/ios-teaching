@@ -48,5 +48,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb220648325390194</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>220648325390194</string>
+    <key>FacebookDisplayName</key>
+    <string>ios-teaching</string>
 </dict>
 </plist>

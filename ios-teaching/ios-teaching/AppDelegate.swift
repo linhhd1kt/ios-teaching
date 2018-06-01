@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+// LoginFacebook step 1
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,13 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
 //        let authVC = AuthVC(nibName: AuthVC.className, bundle: nil)
-        
+//
 //        let nav = UINavigationController(rootViewController: authVC)
         
-        let customVC = CustomVC()
-        customVC.view.backgroundColor = UIColor.blue
+//        let customVC = CustomVC()
+//        customVC.view.backgroundColor = UIColor.blue
         
-        window?.rootViewController = customVC
+        let tutorialStoryboard = UIStoryboard.init(name: "Tutorial", bundle: nil)
+        let addSearchBarVC = tutorialStoryboard.instantiateViewController(withIdentifier: AddSearchBarOnNavigationBarVC.className)
+        
+        window?.rootViewController = addSearchBarVC
+        // LoginFacebook step 2
+//        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         // Override point for customization after application launch.
         return true
     }

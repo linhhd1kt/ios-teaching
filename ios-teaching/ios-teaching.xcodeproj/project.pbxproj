@@ -38,6 +38,10 @@
 		F1A8C39D20AEF661001A3B74 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39C20AEF661001A3B74 /* Category.swift */; };
 		F1A8C39F20AEF68A001A3B74 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C39E20AEF68A001A3B74 /* Unit.swift */; };
 		F1A8C3A120AEF94A001A3B74 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */; };
+		F1D1274420C1743400B51FE0 /* CustomXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1D1274320C1743400B51FE0 /* CustomXibView.xib */; };
+		F1D1274620C1753900B51FE0 /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1274520C1753900B51FE0 /* CustomXibView.swift */; };
+		F1D1274820C1795200B51FE0 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D1274720C1795200B51FE0 /* Tutorial.storyboard */; };
+		F1D1274B20C179A300B51FE0 /* AddSearchBarOnNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D1274A20C179A300B51FE0 /* AddSearchBarOnNavigationBarVC.swift */; };
 		F1E6832220B587AD005824A6 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6832120B587AD005824A6 /* ScrollViewVC.swift */; };
 		F1F75217209C7B06009A87A2 /* SellSizingTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */; };
 		F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */; };
@@ -94,6 +98,10 @@
 		F1A8C39C20AEF661001A3B74 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F1A8C39E20AEF68A001A3B74 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		F1A8C3A020AEF94A001A3B74 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		F1D1274320C1743400B51FE0 /* CustomXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomXibView.xib; sourceTree = "<group>"; };
+		F1D1274520C1753900B51FE0 /* CustomXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibView.swift; sourceTree = "<group>"; };
+		F1D1274720C1795200B51FE0 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		F1D1274A20C179A300B51FE0 /* AddSearchBarOnNavigationBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSearchBarOnNavigationBarVC.swift; sourceTree = "<group>"; };
 		F1E6832120B587AD005824A6 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		F1F75216209C7B06009A87A2 /* SellSizingTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSizingTableViewVC.swift; sourceTree = "<group>"; };
 		F1FC464D20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -375,12 +383,40 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		F1D1274120C173BE00B51FE0 /* LoginFacebook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginFacebook;
+			sourceTree = "<group>";
+		};
+		F1D1274220C1740D00B51FE0 /* CreateXibFile */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1274320C1743400B51FE0 /* CustomXibView.xib */,
+				F1D1274520C1753900B51FE0 /* CustomXibView.swift */,
+			);
+			path = CreateXibFile;
+			sourceTree = "<group>";
+		};
+		F1D1274920C1797500B51FE0 /* AddSearchBarOnNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				F1D1274A20C179A300B51FE0 /* AddSearchBarOnNavigationBarVC.swift */,
+			);
+			path = AddSearchBarOnNavigationBar;
+			sourceTree = "<group>";
+		};
 		F1E6831F20B58773005824A6 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				F1D1274920C1797500B51FE0 /* AddSearchBarOnNavigationBar */,
+				F1D1274220C1740D00B51FE0 /* CreateXibFile */,
+				F1D1274120C173BE00B51FE0 /* LoginFacebook */,
 				F1734EAF20BECA6C00CFCF78 /* CustomUIViewController */,
 				F1A01E1620B915700098F593 /* ImagePicker */,
 				F1E6832020B58799005824A6 /* ScrollView */,
+				F1D1274720C1795200B51FE0 /* Tutorial.storyboard */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -489,8 +525,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1734EAE20BEC3BF00CFCF78 /* AuthVC.xib in Resources */,
+				F1D1274820C1795200B51FE0 /* Tutorial.storyboard in Resources */,
 				F10D668F2087616E00B2E449 /* LaunchScreen.storyboard in Resources */,
 				F10D668C2087616E00B2E449 /* Assets.xcassets in Resources */,
+				F1D1274420C1743400B51FE0 /* CustomXibView.xib in Resources */,
 				F10D66872087616E00B2E449 /* Main.storyboard in Resources */,
 				F1FC465520A32AC50065C1EC /* NotificationVC.xib in Resources */,
 			);
@@ -514,11 +552,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ios-teaching/Pods-ios-teaching-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +631,7 @@
 				F1FC464E20A314BC0065C1EC /* ProfileVC+UITableViewDataSource.swift in Sources */,
 				F1734EAD20BEC3BF00CFCF78 /* AuthVC.swift in Sources */,
 				F11934752099E95300EE9CEC /* SettingCell.swift in Sources */,
+				F1D1274B20C179A300B51FE0 /* AddSearchBarOnNavigationBarVC.swift in Sources */,
 				F1734EB120BECA8500CFCF78 /* CustomVC.swift in Sources */,
 				F1A01E1820B915700098F593 /* ImagePickerVC.swift in Sources */,
 				F10D66A62087623F00B2E449 /* LoginVC.swift in Sources */,
@@ -596,6 +641,7 @@
 				F11BFD952099E23400351130 /* ProfileVC.swift in Sources */,
 				F1E6832220B587AD005824A6 /* ScrollViewVC.swift in Sources */,
 				F11BFD922099E07C00351130 /* RoundAvatar.swift in Sources */,
+				F1D1274620C1753900B51FE0 /* CustomXibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
